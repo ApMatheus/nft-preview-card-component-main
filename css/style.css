@@ -1,0 +1,197 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: none;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(https://fonts.google.com/specimen/Outfit);
+    font-weight: 600;
+}
+
+@import url('https://fonts.googleapis.com/css2? família= Roupa: wght@300;400;600 & display=swap');
+
+a,
+p,
+link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--Very-dark-blue-main-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 300px;
+    height: 495px;
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.img-nft{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: absolute;
+}
+
+.container-img{
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-hover{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    display: none;
+    z-index: 10;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-hover:hover::before{
+    content: url(../images/icon-view.svg);
+}
+
+.container-hover:hover{
+    display: flex;
+    position: absolute;
+    background: hsl(178deg 100% 50% / 49%)
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--White);
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+p{
+    color: var(--Soft-blue);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+.container-details{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-caracter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-caracter img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.container-caracter h3{
+    font-size: 16px;
+    color: var(--Cyan);
+}
+
+.line{
+    background-color: var(--Very-dark-blue-line);
+    width: 100%;
+    height: 2px;
+}
+
+.container-persona{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img-persona{
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--White);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.container-persona h2{
+    font-size: 16px;
+    color: var(--Soft-blue);
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+h2 strong{
+    color: var(--White);
+}
+
+h2 strong:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
